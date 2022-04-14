@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="account-on" transform="translate(-1036 -617)">
+    <rect id="Retângulo_15" data-name="Retângulo 15" width="24" height="24" transform="translate(1036 617)" fill="none"/>
+    <g id="Grupo_30" data-name="Grupo 30" transform="translate(1035.75 616.75)">
+      <path id="Caminho_25" data-name="Caminho 25" d="M12,3.75a8.25,8.25,0,1,0,5.834,2.416A8.25,8.25,0,0,0,12,3.75ZM5.106,5.106A9.75,9.75,0,1,1,2.25,12,9.75,9.75,0,0,1,5.106,5.106Z" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_26" data-name="Caminho 26" d="M10.939,8.189A1.5,1.5,0,1,1,10.5,9.25,1.5,1.5,0,0,1,10.939,8.189ZM12,6.25a3,3,0,1,1-2.121.879A3,3,0,0,1,12,6.25Zm1.457,7.088H10.544a3.654,3.654,0,0,0-3.606,3.086.75.75,0,0,0,1.482.233,2.154,2.154,0,0,1,2.125-1.819h2.911a2.155,2.155,0,0,1,2.125,1.82.75.75,0,0,0,1.482-.233,3.655,3.655,0,0,0-3.6-3.086Z" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="orders-on" transform="translate(-1009 -617)">
+    <rect id="Retângulo_13" data-name="Retângulo 13" width="24" height="24" transform="translate(1009 617)" fill="none"/>
+    <g id="Grupo_28" data-name="Grupo 28" transform="translate(1009 617)">
+      <path id="Caminho_15" data-name="Caminho 15" d="M20,11V5a2,2,0,0,0-2-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2h5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_16" data-name="Caminho 16" d="M9.25,15H10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_17" data-name="Caminho 17" d="M17.5,13.818V17" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_18" data-name="Caminho 18" d="M21,22H14.125A1.125,1.125,0,0,1,13,20.875V16.567a2.007,2.007,0,0,1,.161-.786l.547-1.28a1.126,1.126,0,0,1,1.035-.683h5.514a1.125,1.125,0,0,1,1.034.683l.548,1.282a2,2,0,0,1,.161.786V21a1,1,0,0,1-1,1Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_19" data-name="Caminho 19" d="M22,18a1,1,0,0,0-1-1H14a1,1,0,0,0-1,1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_20" data-name="Caminho 20" d="M9.25,11H13" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_21" data-name="Caminho 21" d="M9.25,7.125H16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Caminho_22" data-name="Caminho 22" d="M6.75,7.8a.75.75,0,1,0-.53-.22A.75.75,0,0,0,6.75,7.8Z" fill="#fff"/>
+      <path id="Caminho_23" data-name="Caminho 23" d="M6.75,11.8a.75.75,0,1,0-.53-.22A.75.75,0,0,0,6.75,11.8Z" fill="#fff"/>
+      <path id="Caminho_24" data-name="Caminho 24" d="M6.75,15.7a.75.75,0,1,0-.53-.22A.75.75,0,0,0,6.75,15.7Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

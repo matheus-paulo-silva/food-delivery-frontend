@@ -1,0 +1,44 @@
+
+@import '../styles/index.scss';
+@import '../styles/generic/breakPoints.scss';
+.cabecalho-container{
+    display: flex;
+    min-height: 75px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    .info {
+        display: flex;
+        align-items: flex-end;
+        @include to($breakpoint-md) {
+           display: grid;
+           grid-template-columns: 1fr;
+        }
+        .title{
+            font-size: 25px;
+            font-weight: 500;
+            @include to($breakpoint-sm) {
+                font-size: 20px;
+             }
+        }   
+        .breadcrumb-custom {
+            font-size: 13px;
+            color: #858585;
+            margin-bottom: 5px;
+            margin-left: 15px;
+            .highlight {
+            color: black;
+            font-weight: 500;
+            }
+        }
+    }
+    
+   
+}
+
+
+.save-span {
+    color: #28C794;
+}
+
+

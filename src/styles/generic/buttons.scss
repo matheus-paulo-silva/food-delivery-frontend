@@ -1,0 +1,19 @@
+.link-button {
+    color: currentColor;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid currentColor;
+    line-height: 1;
+    padding: 0;
+    &.green {
+       color: #28C794;
+    }
+  }
+  
+
+.btn{
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}

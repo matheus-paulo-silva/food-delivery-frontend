@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './styles.scss'
-import { Remove } from '../shared/icon-set2';
+import { Remove } from '../../../shared/icon-set2';
 const UploadAndDisplayImage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 

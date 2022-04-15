@@ -5,9 +5,22 @@ import {
     Link,
     NavLink,
 } from "react-router-dom";
-
-
-import { AccountOff, Logo, Search, BlogOff, BrandOff, CategoryOff, DashboardOff, HomeOff, MarketingOff, MessageOff, OrdersOff, ProductOff, SettingsOff, UserOff, Logout } from '../shared/icon-set2';
+import { 
+    AccountOff, 
+    Logo, 
+    Search, 
+    BlogOff, 
+    BrandOff, 
+    CategoryOff, 
+    DashboardOff, 
+    HomeOff, 
+    MarketingOff, 
+    MessageOff, 
+    OrdersOff, 
+    ProductOff, 
+    SettingsOff, 
+    UserOff, 
+    Logout } from '../../shared/icon-set2';
 const MainMenu = () => {
 
 
@@ -36,8 +49,8 @@ const MainMenu = () => {
                     <div className="vertical-menu">
                         <NavLink to={'/dashboard'}><DashboardOff />Dashboard</NavLink>
                         <NavLink to={'/orders'}><OrdersOff />Orders</NavLink>
-                        <NavLink to={'/form'}><AccountOff />Customer</NavLink>
-                        <NavLink to={'/form2'}><CategoryOff />Category</NavLink>
+                        <NavLink to={'/customer'}><AccountOff />Customer</NavLink>
+                        <NavLink to={'/category'}><CategoryOff />Category</NavLink>
                         <NavLink to={'/products'}><ProductOff />Products</NavLink>
                         <NavLink to={'/brand'}><BrandOff />Brand</NavLink>
                         <NavLink to={'/blog'}><BlogOff />Blog</NavLink>

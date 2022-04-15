@@ -156,7 +156,6 @@ section {
     align-items: center;
     justify-content: center;
     width: 400px;
-    padding-bottom: 35px;
     .custom-input-search {
       display: block;
       width: 300px;
@@ -236,3 +235,31 @@ section {
 }
 
 
+.button-block-form {
+  display: grid;
+  grid-template-columns: 70px 55px 55px 55px;
+  gap: 15px;
+  justify-content: end;
+  .btn-void-custom {
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 15px;
+  }
+}
+
+
+.form-check-input:checked {
+  border-color: #28C794;
+  background-color: #28C794;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.action-block {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  padding: 20px 0;
+}

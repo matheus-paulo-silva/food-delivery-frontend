@@ -1,15 +1,13 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
-import Form from './form/Form'
-import Form2 from './form/Form2'
-import NoMatch from './routes/NoMatch'
-import MainMenu from './menu/main-menu'
+import { Details, CustomerList } from './modules/customer'
+import NoMatch from './modules/not-found/NoMatch'
+import MainMenu from './template/menu/main-menu'
 import {
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
-import './styles.scss'
+import './styles/index.scss'
 
 function App() {
 
@@ -18,8 +16,8 @@ function App() {
       <div className="app-content">
       <MainMenu />
         <Routes>
-          <Route path="/form" exact element={<Form />} />
-          <Route path="/form2" exact element={<Form2 />} />
+          <Route path="/customer/:id" exact element={<Details />} />
+          <Route path="/customer" exact element={<CustomerList />} />
           <Route path="*" exact element={<NoMatch />} />
         </Routes>
       </div>

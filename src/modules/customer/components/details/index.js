@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
 import "./styles.scss"
-import Cabecalho from '../cabecalho/Cabecalho'
-import InfoOrder from '../info-order/info-order'
-import Image from '../Image/Image'
-import Card from '../shared/card'
+import Header from '../header'
+import InfoOrder from '../../info-order/info-order'
+import Image from '../../Image/Image'
+import Card from '../../../../shared/card'
+import { Save } from '../../../../shared/icon-set2';
 
-
-const Form = () => {
+const Details = () => {
     const [form, setForm] = useState({
         firstName: '',
         mi: '',
@@ -36,7 +35,7 @@ const Form = () => {
 
     return (
         <div className="container">
-            <Cabecalho />
+           <Header icon={<Save />} nav={"/customer"} text="Save" />
             <Card>
                 <form className="form-horizontal">
                 <InfoOrder />
@@ -162,5 +161,5 @@ const Form = () => {
     );
 }
 
-export default Form;
+export default Details;
 

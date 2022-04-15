@@ -2,7 +2,7 @@ import './styles.scss'
 
 const Card = ({children})=>{
     return(
-        <div id="card">
+        <div id="card-custom">
              {children}
         </div>
     )

@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import "./styles.scss"
-import "./styles.scss"
-import Cabecalho from '../cabecalho/Cabecalho'
-import Card from '../shared/card'
-import { UncontrolledButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import Header from '../header'
+import Card from '../../../../shared/card'
+import { 
+    UncontrolledButtonDropdown, 
+    DropdownToggle, 
+    DropdownMenu, 
+    DropdownItem } from 'reactstrap'
 import MaterialIcon from 'material-icons-react';
+import { Link } from 'react-router-dom'
+import { Add } from '../../../../shared/icon-set2';
 
-
-const Form2 = () => {
+const CustomerList = () => {
     const [form, setForm] = useState({
         firstName: '',
         mi: '',
@@ -36,15 +40,22 @@ const Form2 = () => {
 
     return (
         <div className="container">
-            <Cabecalho />
+            <Header icon={<Add />} nav={"/customer"} text="Add Customer" />
             <Card>
-                <section className="search-block-form">
-                    <input className="custom-input-search" type="text" placeHolder="Search" />
-                    <button type="button" className="btn-dark-custom"><span>Search</span></button>
-                </section>
+                <div className="action-block">
+                    <section className="search-block-form">
+                        <input className="custom-input-search" type="text" placeHolder="Search" />
+                        <button type="button" className="btn-dark-custom"><span>Search</span></button>
+                    </section>
+                    <section className="button-block-form">
+                        <button type="button" className="btn-void-custom"><span>Status</span></button>
+                        <button type="button" className="btn-void-custom"><span>Export</span></button>
+                        <button type="button" className="btn-void-custom"><span>Delete</span></button>
+                        <button type="button" className="btn-void-custom"><span>Cancel</span></button>
+                    </section>
+                </div>
                 <div className="w-100p h-100p d-flex fxd-c border-table">
                     <div className="table-header peers jc-sb ">
-                        {/* <div className="id-table-column"><b>#ID</b></div> */}
                         <div className="w-10p d-n@md-">
                             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                         </div>
@@ -66,19 +77,15 @@ const Form2 = () => {
                         <div className="w-10p d-n@md-">
 
                         </div>
-                        {/*  <div className="w-50p status-area"> Criado em: </div>
-                        <div className="w-50p status-area"> Atualizado até: </div>
-                        <div className="w-33p status-area"> Status </div>
-                        <div className="w-33p status-area"></div> */}
                     </div>
-                    <div className="ps psb h-100p table-content">
-                        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((item, idx) =>
+                    <div className="ps psb h-100p table-content" style={{border: "1px solid #ccc"}}>
+                        {[0, 1, 2, 3, 4, 5].map((item, idx) =>
                             <div key={idx} className="table-tr tb-hover peers jc-sb bdB">
                                 <div className="w-10p status-area">
                                     <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                 </div>
                                 <div className="w-25p status-area">
-                                    <button className="link-button green">12345</button>
+                                    <Link to={'/customer/12345'} className="link-button green">12345</Link>
                                 </div>
                                 <div className="w-50p status-area">
                                     Matheus Silva
@@ -102,10 +109,10 @@ const Form2 = () => {
                                         </DropdownToggle>
                                         <DropdownMenu>
                                             <DropdownItem>
-                                                <span className="dropdown-toggle-content"><MaterialIcon icon="visibility" size="sm" /> View Detail</span>
+                                                <span className="dropdown-toggle-content"><MaterialIcon icon="visibility" size="sm" />View Detail</span>
                                             </DropdownItem>
                                             <DropdownItem>
-                                                <span className="dropdown-toggle-content"><MaterialIcon icon="mode" size="sm" /> Edit</span>
+                                                <span className="dropdown-toggle-content"><MaterialIcon icon="mode" size="sm" />Edit</span>
                                             </DropdownItem>
                                             <DropdownItem>
                                                 <span className="dropdown-toggle-content red"><MaterialIcon icon="delete_outline" size="sm" />Delete</span>
@@ -115,14 +122,14 @@ const Form2 = () => {
                                 </div>
                             </div>)}
                     </div>
-                    <div>
-                        page
-                    </div>
+                </div>
+                <div style={{background: "#f2f2f2", minHeight: "50px"}}>
+                            page
                 </div>
             </Card>
         </div>
     );
 }
 
-export default Form2;
+export default CustomerList;
 

@@ -1,7 +1,6 @@
 import './styles.scss'
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
-import { PaidOrders, TotalSpend, CreatedOrders } from '../shared/icon-set2';
+import { PaidOrders, TotalSpend, CreatedOrders } from '../../../shared/icon-set2';
 
 
 const InfoOrder = () => {

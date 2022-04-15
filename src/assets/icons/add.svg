@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#37e89e"/>
+      <stop offset="1" stop-color="#b4ffdf"/>
+    </linearGradient>
+  </defs>
+  <g id="orders-on" transform="translate(-1009 -617)">
+    <rect id="Retângulo_13" data-name="Retângulo 13" width="24" height="24" transform="translate(1009 617)" fill="none"/>
+    <g id="Grupo_44" data-name="Grupo 44" transform="translate(1013.66 621.66)">
+      <path id="Caminho_52" data-name="Caminho 52" d="M7.04,0A.859.859,0,0,1,7.9.859V13.821a.859.859,0,1,1-1.718,0V.859A.859.859,0,0,1,7.04,0Z" transform="translate(0.3 0)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Caminho_53" data-name="Caminho 53" d="M14.68,7.04a.859.859,0,0,1-.859.859H.859a.859.859,0,1,1,0-1.718H13.821A.859.859,0,0,1,14.68,7.04Z" transform="translate(0 0.3)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

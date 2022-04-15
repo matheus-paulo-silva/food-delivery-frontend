@@ -18,6 +18,7 @@ import { ReactComponent as  Save} from '../assets/icons/save.svg'
 import { ReactComponent as  Remove} from '../assets/icons/remove.svg'
 import { ReactComponent as  CreatedOrders} from '../assets/icons/created-orders.svg'
 import { ReactComponent as  Logout} from '../assets/icons/logout.svg'
+import { ReactComponent as  Add} from '../assets/icons/add.svg'
 
 export {
     AccountOff, 
@@ -39,5 +40,6 @@ export {
     TotalSpend,
     Remove,
     CreatedOrders,
-    Logout
+    Logout,
+    Add
 }

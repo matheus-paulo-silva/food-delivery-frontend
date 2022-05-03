@@ -1,0 +1,108 @@
+@import '../../../../styles/generic/index.scss';
+
+.tracking-block {
+    margin-top: 20px;
+
+    .tracking-items {
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'icon-order icon-pickup icon-payment icon-done'
+            'sep-start sep sep sep-end'
+            'text-order text-pickup text-payment text-done';
+
+        font-size: 11px;
+        color: #cccccc;
+
+        .text-order {
+            grid-area: text-order;
+        }
+
+        .icon-order {
+            grid-area: icon-order;
+            position: relative;
+        }
+
+        .text-pickup {
+            grid-area: text-pickup;
+        }
+
+        .icon-pickup {
+            grid-area: icon-pickup;
+            position: relative;
+        }
+
+        .text-payment {
+            grid-area: text-payment;
+        }
+
+        .icon-payment {
+            grid-area: icon-payment;
+            position: relative;
+        }
+
+        .text-done {
+            grid-area: text-done;
+        }
+
+        .icon-done {
+            grid-area: icon-done;
+            position: relative;
+        }
+
+        .sep {
+            width: 100%;
+            height: 1px;
+            background: black;
+            grid-area: sep;
+            margin: 7px 0;
+        }
+
+        .sep-start {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent 50%, black 50%);
+            grid-area: sep-start;
+            margin: 7px 0;
+        }
+
+        .sep-end {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to left, transparent 50%, black 50%);
+            grid-area: sep-end;
+            margin: 7px 0;
+        }
+
+        .wh {
+            grid-area: wh;
+
+        }
+
+        .transp {
+            grid-area: transp;
+
+        }
+
+        .custom-progress {
+            &:after {
+                content: '●';
+                font-size: 20px;
+                position: absolute;
+                bottom: 0;
+                color: black;
+                margin-bottom: -21px;
+                left: -1px;
+            }
+
+            &.active {
+                path {
+                    fill: $success;
+                }
+            }
+        }
+    }
+}

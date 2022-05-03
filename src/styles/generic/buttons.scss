@@ -1,8 +1,9 @@
+@import './colors';
+
 .link-button {
     color: currentColor;
     border: none;
     background: transparent;
-    border-bottom: 1px solid currentColor;
     line-height: 1;
     padding: 0;
     &.green {
@@ -17,3 +18,34 @@
         box-shadow: none;
     }
 }
+
+
+
+.status{
+    border-radius: 7px;
+    padding: 3px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 500;
+    &.success{
+        color: $success;
+        background-color: rgba($success, 0.2);
+    }
+    &.failed{
+        color: $danger;
+        background-color: rgba($danger, 0.2);
+        
+    }
+    &.on-going{
+        color: $warning;
+        background-color: rgba($warning, 0.2);
+    }
+    &.canceled{
+        color: $canceled;
+        background-color: rgba($canceled, 0.2);
+    }
+}
+

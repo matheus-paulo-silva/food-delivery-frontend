@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import MaterialIcon from "material-icons-react";
 import { Link } from "react-router-dom";
-import { Add } from "../../../../shared/icon-set2";
+import { Add, CategoryIcon } from "../../../../shared/icon-set2";
 
 const CategoryList = (): JSX.Element => {
   const [form, setForm] = useState({
@@ -66,7 +66,7 @@ const CategoryList = (): JSX.Element => {
       <Card>
         <div className="action-block">
           <section className="search-block-form">
-            <div className="d-grid">
+            <div className="d-grid search-content">
               <label htmlFor="status">Status</label>
               <input
                 className="custom-input-search"
@@ -135,7 +135,7 @@ const CategoryList = (): JSX.Element => {
                   />
                 </div>
                 <div className="w-10p status-area">
-                  Icon
+                  <CategoryIcon width={30} height={30} />
                 </div>
                 <div className="w-40p status-area">Bakery</div>
                 <div className="w-30p status-area">91</div>

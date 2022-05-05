@@ -11,11 +11,94 @@
         grid-template-rows: auto;
         grid-template-areas:
             'icon-order icon-pickup icon-payment icon-done'
-            'sep-start sep sep sep-end'
+            'status-tracking status-tracking status-tracking status-tracking'
             'text-order text-pickup text-payment text-done';
 
         font-size: 11px;
-        color: #cccccc;
+        color: #858585;
+
+        .status-tracking {
+            width: 100%;
+            display: grid;
+            grid-area: status-tracking;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 1px;
+            margin: 10px 0;
+            grid-template-areas:
+            'st-start um dois tres quatro cinco seis st-end';
+            .st-start {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #ffffff;
+                grid-area: st-start;
+            }
+            .st-end {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #ffffff;
+                grid-area: st-end;  
+            }
+            .um {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: um;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+            .dois {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: dois;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+            .tres {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: tres;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+            .quatro {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: quatro;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+            .cinco {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: cinco;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+            .seis {
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #cccccc;
+                grid-area: seis;
+                &.cell{
+                    border-top: 1px solid black;
+                }
+                
+            }
+        }
 
         .text-order {
             grid-area: text-order;
@@ -52,31 +135,6 @@
             grid-area: icon-done;
             position: relative;
         }
-
-        .sep {
-            width: 100%;
-            height: 1px;
-            background: black;
-            grid-area: sep;
-            margin: 7px 0;
-        }
-
-        .sep-start {
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(to right, transparent 50%, black 50%);
-            grid-area: sep-start;
-            margin: 7px 0;
-        }
-
-        .sep-end {
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(to left, transparent 50%, black 50%);
-            grid-area: sep-end;
-            margin: 7px 0;
-        }
-
         .wh {
             grid-area: wh;
 
@@ -94,8 +152,8 @@
                 position: absolute;
                 bottom: 0;
                 color: black;
-                margin-bottom: -21px;
-                left: -1px;
+                margin-bottom: -24px;
+                left: calc(50% - 6px)
             }
 
             &.active {

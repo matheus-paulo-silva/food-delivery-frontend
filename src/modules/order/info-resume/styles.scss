@@ -31,6 +31,11 @@
         grid-template-columns: 1fr 20px;
         gap: 20px 0;
         grid-auto-rows: 25px auto;
+        &.grey {
+            path {
+                fill: #858585;
+            }
+        }
         p {
             font-size: 20px;
             color: #28C794;

@@ -40,6 +40,20 @@ import { ReactComponent as CreatedOrders } from "../assets/icons/created-orders.
 import { ReactComponent as Logout } from "../assets/icons/logout.svg";
 // @ts-ignore
 import { ReactComponent as Add } from "../assets/icons/add.svg";
+// @ts-ignore
+import { ReactComponent as CategoryIcon } from "../assets/icons/category-icon.svg";
+// @ts-ignore
+import  EmptyFile  from "../assets/icons/empty-file.png";
+// @ts-ignore
+import { ReactComponent as Order } from "../assets/icons/order.svg";
+// @ts-ignore
+import { ReactComponent as PickUpTime } from "../assets/icons/pickup-time.svg";
+// @ts-ignore
+import { ReactComponent as Payment } from "../assets/icons/payment.svg";
+// @ts-ignore
+import { ReactComponent as Done } from "../assets/icons/done.svg";
+// @ts-ignore
+import { ReactComponent as Trucker } from "../assets/icons/trucker.svg";
 
 export {
   AccountOff,
@@ -63,4 +77,11 @@ export {
   CreatedOrders,
   Logout,
   Add,
+  CategoryIcon,
+  EmptyFile,
+  Order,
+  PickUpTime,
+  Payment,
+  Done,
+  Trucker,
 };

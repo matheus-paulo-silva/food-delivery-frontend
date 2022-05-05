@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./styles.scss";
 import InfoOrder from "../../info-order/info-order";
-import Image from "../../Image/Image";
-import Card from "../../../../shared/card";
-import Header from "../../../../shared/header";
+import { CustomUploader, Card, Header } from "../../../../shared";
 import { Save } from "../../../../shared/icon-set2";
 
 const Details = (): JSX.Element => {
@@ -29,6 +27,7 @@ const Details = (): JSX.Element => {
     street: "",
     nation: "",
     dateCreate: "",
+    imageUser: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
   });
   const [selected, setSelected] = useState("");
 
@@ -60,7 +59,7 @@ const Details = (): JSX.Element => {
           <InfoOrder />
           <div className="form-block">
             <h1>Image User</h1>
-            <Image />
+            <CustomUploader fileUrl={form.imageUser} />
             <section className="form-section">
               <h1>User Information</h1>
               <div className="row">

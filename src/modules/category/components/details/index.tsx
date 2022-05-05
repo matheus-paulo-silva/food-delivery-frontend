@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
-import Image from "../../Image/Image";
 import TagsInput from "../TagsInput";
-import Card from "../../../../shared/card";
-import Header from "../../../../shared/header";
+import { CustomUploader, Card, Header } from "../../../../shared";
 import { Save } from "../../../../shared/icon-set2";
 
 const AddCategory = (): JSX.Element => {
@@ -18,13 +16,13 @@ const AddCategory = (): JSX.Element => {
     url: "",
   });
   const [classification, setClassification] = useState([
-    { id: 1, name: "Roof Lever - Bakerym"},
-    { id: 2, name: "Carlos - Bakery"},
-    { id: 3, name: "Bakery - Food"},
-    { id: 4, name: "Testing"}
+    { id: 1, name: "Roof Lever - Bakerym" },
+    { id: 2, name: "Carlos - Bakery" },
+    { id: 3, name: "Bakery - Food" },
+    { id: 4, name: "Testing" }
   ]);
   const [selected, setSelected] = useState("");
-  useEffect (() => {
+  useEffect(() => {
     setForm({
       nameCategory: "Joao",
       classification: 3,
@@ -44,7 +42,7 @@ const AddCategory = (): JSX.Element => {
       [field]: evt.target.value,
     });
   };
-  
+
   const onChange2 = (evt) => {
     console.log(evt.target.name)
     console.log(evt.target.value)
@@ -53,7 +51,7 @@ const AddCategory = (): JSX.Element => {
       [evt.target.name]: evt.target.value,
     });
   };
-  
+
 
   const selectedTags = tags => {
     console.log(tags);
@@ -79,7 +77,7 @@ const AddCategory = (): JSX.Element => {
         <form className="form-horizontal">
           <div className="form-block">
             <h1>Category Image</h1>
-            <Image imageUrl={form.url} />
+            <CustomUploader fileUrl={form.url} />
             <section className="form-section">
               <h1>Category Information</h1>
               <div className="row">

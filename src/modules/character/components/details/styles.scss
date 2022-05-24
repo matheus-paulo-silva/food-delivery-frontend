@@ -183,13 +183,6 @@ section {
           opacity: 1;
       }
     }
-    .search-content{
-      padding-bottom: 22px;
-      label{
-        font-size: 15px;
-        margin-left: 10px;
-      }
-    }
 }
 
 
@@ -242,9 +235,9 @@ section {
 }
 
 
-.button-block-form-category {
+.button-block-form {
   display: grid;
-  grid-template-columns: 70px 55px 55px 55px 55px;
+  grid-template-columns: 70px 55px 55px 55px;
   gap: 15px;
   justify-content: end;
   .btn-void-custom {
@@ -269,32 +262,4 @@ section {
   display: grid;
   grid-template-columns: 400px 1fr;
   padding: 20px 0;
-}
-
-
-.description {
-/* autoprefixer: off */
--webkit-box-orient: vertical;
-/* autoprefixer: on */
-width: 100%;
-overflow: hidden;
-text-overflow: ellipsis;
-overflow: hidden;
-display: -webkit-box;
--webkit-line-clamp: 1; //put number of line here
-margin: 0;
-padding: 0;
-font-size: 12px;
-&.two-lines {
-    -webkit-line-clamp: 2; //put number of line here
-}
-&.tree-lines {
-    -webkit-line-clamp: 3; //put number of line here
-}
-&.four-lines {
-    -webkit-line-clamp: 4; //put number of line here
-}
-&.five-lines {
-    -webkit-line-clamp: 5; //put number of line here
-}
 }

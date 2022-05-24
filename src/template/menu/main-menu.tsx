@@ -91,6 +91,14 @@ const MainMenu = (): JSX.Element => {
               <MarketingOff />
               Marketing
             </NavLink>
+            <NavLink to={"/comics"}>
+              <MarketingOff />
+              Comics
+            </NavLink>
+            <NavLink to={"/characters"}>
+              <MarketingOff />
+              Characters
+            </NavLink>
           </div>
         </div>
       </div>

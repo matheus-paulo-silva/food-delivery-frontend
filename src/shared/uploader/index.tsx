@@ -62,7 +62,7 @@ const CustomUploader = ({ fileUrl }): JSX.Element => {
         </div>
       </div>
       <button
-        className="btn-dark-custom"
+        className="btn-dark-custom align-buttom-img"
         type="button"
         onClick={handleRemoveImage}
       >

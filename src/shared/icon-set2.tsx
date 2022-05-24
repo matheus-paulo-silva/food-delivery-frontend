@@ -54,6 +54,8 @@ import { ReactComponent as Payment } from "../assets/icons/payment.svg";
 import { ReactComponent as Done } from "../assets/icons/done.svg";
 // @ts-ignore
 import { ReactComponent as Trucker } from "../assets/icons/trucker.svg";
+// @ts-ignore
+import { ReactComponent as Back } from "../assets/icons/back.svg";
 
 export {
   AccountOff,
@@ -84,4 +86,5 @@ export {
   Payment,
   Done,
   Trucker,
+  Back,
 };

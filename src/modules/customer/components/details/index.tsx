@@ -3,6 +3,7 @@ import "./styles.scss";
 import InfoOrder from "../../info-order/info-order";
 import { CustomUploader, Card, Header } from "../../../../shared";
 import { Save } from "../../../../shared/icon-set2";
+import { useParams } from "react-router-dom";
 
 const Details = (): JSX.Element => {
   const [form, setForm] = useState({
@@ -30,7 +31,7 @@ const Details = (): JSX.Element => {
     imageUser: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
   });
   const [selected, setSelected] = useState("");
-
+  const { id } = useParams();
   const onChange = (field) => (evt) => {
     setForm({
       ...form,
